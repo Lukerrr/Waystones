@@ -442,7 +442,8 @@ public class PlayerWaystoneManager {
                 ((ServerPlayer) entity).stopSleepInBed(true, true);
             }
 
-            if (targetWorld == entity.level()) {
+            // if (targetWorld == entity.level()) {
+            if (true) {
                 ((ServerPlayer) entity).connection.teleport(x, y, z, yaw, entity.getXRot(), Collections.emptySet());
             } else {
                 ((ServerPlayer) entity).teleportTo(targetWorld, x, y, z, yaw, entity.getXRot());
